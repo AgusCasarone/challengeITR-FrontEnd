@@ -7,7 +7,7 @@ import { AppComponent } from './app.component';
 import { JugadoresComponent } from './verJugadores/pages/jugadores/jugadores.component';
 import { RosterComponent } from './verRoster/pages/roster/roster.component';
 import { HomeComponent } from './verHome/home/home.component';
-import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -21,6 +21,7 @@ import { ReactiveFormsModule } from '@angular/forms';
     AppRoutingModule,
     HttpClientModule,
     ReactiveFormsModule,
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
