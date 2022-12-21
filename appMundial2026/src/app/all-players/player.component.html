@@ -1,0 +1,29 @@
+<div class="component">
+  <div class="row">
+    <div class="col-sm-6">
+      <div class="card text-white bg-dark " style="width: 18rem">
+        <div class="card-body">
+          <h4 class="card-title">{{ player?.name }} {{ player?.lastName }}</h4>
+          <h6 class="card-subtitle mb-2 ">ID: {{ player?.id }}</h6>
+          <ul class="card-text list-group">
+            <li class="list-group-item list-group-item-dark list-group-item-action">EDAD: {{ player?.age }}</li>
+            <li class="list-group-item list-group-item-dark list-group-item-action">EQUIPO: {{ player?.team }}</li>
+            <li class="list-group-item list-group-item-dark list-group-item-action">POSICIÓN: {{ player?.position }}</li>
+          </ul>
+          <br />
+          <div class="btn-group btn-group-toggle" data-toggle="buttons">
+            <button class="btn btn-secondary btn-sm">
+              Agregar al Roster
+            </button>
+            <button class="btn btn-secondary btn-sm">
+              Editar
+            </button>
+            <button class="btn btn-secondary btn-sm" (click)="onDeleteClicked()">
+              Eliminar
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
