@@ -1,9 +1,15 @@
-<div class="component">
-  <div class="row">
-    <div class="col">
-      <h2>Jugadores</h2>
-      <br />
-        <app-player *ngFor="let player of players" [player]="player" (playerDelete)="deletePlayer(player)"></app-player>
+<div class="p-4">
+  <h2 class="text-light">Jugadores</h2>
+  <br />
+  <div class="component">
+    <div class="row">
+      <app-player
+        *ngFor="let player of players"
+        [player]="player"
+        (playerDelete)="deletePlayer(player)"
+        class="col-sm-auto py-3"
+      >
+      </app-player>
     </div>
   </div>
 </div>

@@ -6,12 +6,14 @@ import { AppComponent } from './app.component';
 import { AllPlayersComponent } from './all-players/all-players.component';
 import { PlayerComponent } from './all-players/player.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { NavbarComponent } from './navbar/navbar.component';
 
 @NgModule({
     declarations: [
         AppComponent,
         AllPlayersComponent,
         PlayerComponent,
+        NavbarComponent,
     ],
     providers: [],
     bootstrap: [AppComponent],
